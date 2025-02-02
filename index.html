@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Cafe Data Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Intro Section -->
+    <section id="intro" class="fade-in">
+        <h1>Tech Cafe Data Analysis</h1>
+        <p>This project analyzes the relationship between money spent and waiting time at a tech cafe. The data was collected through a survey and analyzed using Python. Below are the insights and visualizations.</p>
+    </section>
+
+    <!-- Data Summary Section -->
+    <section id="data-summary" class="fade-in">
+        <h2>Data Summary</h2>
+        <ul>
+            <li><strong>Mean Money Spent:</strong> $60.24</li>
+            <li><strong>Mean Waiting Time:</strong> 15.73 minutes</li>
+            <li><strong>Standard Deviation (Money Spent):</strong> $41.60</li>
+            <li><strong>Standard Deviation (Waiting Time):</strong> 10.89 minutes</li>
+            <li><strong>Correlation between Money Spent and Waiting Time:</strong> 0.98 (Strong Positive Correlation)</li>
+        </ul>
+    </section>
+
+    <!-- Distribution Plots Section -->
+    <section id="distribution-plots" class="fade-in">
+        <h2>Distribution of Money Spent and Waiting Time</h2>
+        <ul>
+            <li><strong>Money Spent:</strong> The distribution is right-skewed, with most customers spending between $20 and $100.</li>
+            <li><strong>Waiting Time:</strong> The distribution is also right-skewed, with most customers waiting between 5 and 25 minutes.</li>
+        </ul>
+        <img src="Plot1.png" alt="Money and Time Combined Plot" class="zoom">
+    </section>
+
+    <!-- Correlation Analysis Section -->
+    <section id="correlation-analysis" class="fade-in">
+        <h2>Correlation Analysis</h2>
+        <ul>
+            <li><strong>Scatter Plot:</strong> Shows a strong positive linear relationship between money spent and waiting time.</li>
+            <li><strong>Correlation Heatmap:</strong> Confirms the strong correlation (0.98) between the two variables.</li>
+        </ul>
+        <img src="Plot2.png" alt="Scatter Plot" class="zoom">
+        <img src="Plot3.png" alt="Correlation Heatmap" class="zoom">
+    </section>
+
+    <!-- Linear Regression Section -->
+    <section id="linear-regression" class="fade-in">
+        <h2>Linear Regression Model</h2>
+        <ul>
+            <li><strong>Intercept:</strong> 1.23</li>
+            <li><strong>Slope:</strong> 0.24</li>
+            <li><strong>Insight:</strong> For every dollar spent, waiting time increases by 0.24 minutes.</li>
+        </ul>
+        <img src="Plot4.png" alt="Linear Regression Plot" class="zoom">
+    </section>
+
+    <!-- Conclusion Section -->
+    <section id="conclusion" class="fade-in">
+        <h2>Conclusion</h2>
+        <p>The analysis reveals a strong positive correlation between money spent and waiting time at the tech cafe. Customers who spend more tend to wait longer, likely due to more complex orders. The linear regression model further quantifies this relationship.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
